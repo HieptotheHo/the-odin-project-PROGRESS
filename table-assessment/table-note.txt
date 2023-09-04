@@ -3,3 +3,6 @@ table
   thead
   tbody
   tfoot
+
+
+attribute: scope, colgroup colspan, rowspan
