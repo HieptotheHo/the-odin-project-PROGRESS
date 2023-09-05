@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Form Validation to ensure good UX and accessibility guidelines</h1>
+    
+    <form action="#" method="get">
+        <div>
+            <label for="user-password">minlength set for password input as 8 characters</label>
+            <input type="password" name = password placeholder="type pass" id="user-password" minlength="8">
+        </div>
+        <br>
+        <div>
+            <label for="feedback">feedback set with max length = 20 characters</label>
+            <textarea id="feedback" placeholder="What's happening?" maxlength="20"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="number" id="quantity" name="quantity" min="1" value="0">
+        </div>
+        <br>
+        <h3>pattern validation using regex of JS</h3>
+        <div>
+            <label for="zip_code">Postal / Zip Code:</label>
+          </div>
+        
+          <input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required>
+        
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+    </form>
+</body>
+</html>
